@@ -10,7 +10,7 @@ public class Problem3 {
 	public void problem3() {
 		long number = 600851475143L;
 		//long number = 13195L;
-		for(long i=number/2; i>2; i--) {
+		for(long i=(int)Math.sqrt(number); i>2; i--) {
 			if(number%i==0 && isPrime(i)) {
 				System.out.println(i);
 				return;
