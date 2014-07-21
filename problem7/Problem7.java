@@ -26,7 +26,7 @@ public class Problem7 {
 		if(num%2==0 || num%3==0) {
 			return false;
 		}
-		for(long i=5; i<(long)(Math.pow(num,0.5)+1); i+=6) {
+		for(long i=5; i<(long)(Math.sqrt(num)+1); i+=6) {
 			if(num%i==0 || (num%(i+2))==0) {
 				return false;
 			}
